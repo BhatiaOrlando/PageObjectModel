@@ -1,0 +1,17 @@
+WebService Testing involves following steps -
+
+Understand the WSDL file
+Determine the operations that particular web service provides
+Determine the XML request format which we need to send
+Determine the response XML format
+Using a tool or writing code to send request and validate the response
+
+Make Bed in meowning, Clean room, towels, khaki, shirts, no razors, smell good, iron board, nice Yeti thing
+
+Contains Assertion
+Not contains Assertion
+ X Path Match Assertion.
+X Query Match Assertion
+ Scripting Assertion
+ 
+ 

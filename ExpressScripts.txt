@@ -1,0 +1,147 @@
+Response Metrics
+
+    Average Response Time
+    Peak Response Time
+    Error Rate
+
+Volume Measurements
+
+    Concurrent Users
+    Requests per Second
+    Throughput
+	
+
+    Response time: It’s the most important parameter to reflect the quality of a Web Service. Response time is the total time it takes after the client sends a request till it gets a response. This includes the time the message remains in transit on the network, which can’t be measured exclusively by any load-testing tool. So we’re restricted to testing Web Services deployed on a local machine. The result will be a graph measuring the average response time against the number of virtual users.
+    
+	Number of transactions passed/failed: This parameter simply shows the total number of transactions passed or failed.
+    
+	Throughput: It’s measured in bytes and represents the amount of data that the virtual users receive from the server at any given second. We can compare this graph to the response-time graph to see how the throughput affects transaction performance.
+    
+	Load size: The number of concurrent virtual users trying to access the Web Service at any particular instance in an interval of time.
+    
+	CPU utilization: The amount of CPU time used by the Web Service while processing the request.
+    
+	Memory utilization: The amount of memory used by the Web Service while processing the request.
+    
+	[-Wait Time (Average Latency): The time it takes from when a request is sent until the first byte is received
+	
+	Test Plan document should be :
+
+    Test Plan identifier
+    References
+    Introduction
+    Test Items
+    Risks
+    Items to be tested
+    Features excluded for testing
+    Testing Approach
+    Test Pass and Fail Criteria
+    Resumption/Suspension Criteria
+    Test deliverables
+    Test Environment Set Up
+    Training and Staffing
+    Team Member Responsibilities
+    Testing Schedule
+    Planning for Risks and Contingency Plans
+    Approvals
+
+	
+	
+	Select hiv drugs from patients
+	patient identifie
+	dob
+	claim ident
+	service ident
+    targeted drug	
+	
+	
+	
+	DW/ETL Tests:
+	
+   New Data Warehouse Testing – New DW is built and verified from scratch. Data input is taken from customer requirements and different data sources and new data warehouse is built and verified with the help of ETL tools.
+   
+   Migration Testing – In this type of project customer will have an existing DW and ETL performing the job but they are looking to bag new tool in order to improve efficiency.
+    
+	Change Request – In this type of project new data is added from different sources to an existing DW. Also, there might be a condition where customer needs to change their existing business rule or they might integrate the new rule.
+    
+	Report Testing – Report is the end result of any Data Warehouse and the basic propose for which DW builds. The report must be tested by validating layout, data in the report and calculation.
+	
+	
+	Test tasks:
+	
+	1) Data needed
+	2) Data sources
+	3) Data Quality
+	  -  Make sure that ETL application appropriately rejects, replaces with default values and reports invalid data.
+	  
+	4) Performance Acceptance Criteria
+	Make sure that data is loaded in data warehouse within prescribed and expected time frames to confirm improved performance and scalability.
+	
+	5) Data Transformation Rules - Verify that data is transformed correctly according to various business requirements and rules.
+	6) Review data dictionary (metdata)
+	7) source to target data mapping
+
+	- record counts during transformation are correct
+	- no data loss or truncation for fields
+	 -Validate the data in production system & compare it against the source data.
+	 - Data & constraint Check: The datatype, length, index, constraints, etc. are tested in this case.
+	The following constraints are commonly used in SQL:
+
+    NOT NULL - Ensures that a column cannot have a NULL value.
+    UNIQUE - Ensures that all values in a column are different.
+    PRIMARY KEY - A combination of a NOT NULL and UNIQUE. ...
+    FOREIGN KEY - Uniquely identifies a row/record in another table.
+	
+	8) validate etl/dw architecture
+	9) validation of data model - dimensional model/normalized model
+	10) index - partition
+	11) archival / purge strategy
+	12) error logs/exception handling/recoverablity
+	13) Parallel execution and precedence
+	14) etl pull/full logic delta
+	15) testdata prep
+	16) Etl testing end to end scenarios
+	17) OLAP and Cube
+	18) Report - drill down and drill throughput
+	
+	VALIDATION Tests
+	------------------------
+	
+	Validation is an automatic check to ensure that data entered is sensible and feasible.  Validation cannot ensure data is accurate.
+	
+    Validation Method 	Description
+    --------------------------------------
+    Range check 	    Checks the data falls between an acceptable upper and lower value, within a set range
+    Type check       	Checks that the data entered is of an expected type, e.g. text or a number
+    Length check 	    Checks the number of characters meets expectations, e.g. an 8 character password
+    Presence check 	    Checks that the user has at least inputted something, stopping them from accidentally entering nothing
+    Check digit 	     An extra digit added to a number which is calculated from the other digits, this ensures the rest of the number has been entered properly
+	
+	Below is the list of objects that are treated as essential for validation in this testing:
+
+    -Verify that data transformation from source to destination works as expected
+    -Verify that expected data is added to the target system
+    -Verify that all DB fields and field data is loaded without any truncation
+    -Verify data checksum for record count match
+    -Verify that for rejected data proper error logs are generated with all details
+    -Verify NULL value fields
+    -Verify that duplicate data is not loaded
+    -Verify data integrity
+	
+	ETL Testing Process
+
+   a)ETL Testing Process is similar to other testing processes and includes some stages.
+
+    They are:
+
+    Identifying business requirements
+    Test Planning
+    Designing test cases and test data
+    Test execution and bug reporting
+    Summarizing reports
+    Test closure
+	
+	
+
+
+

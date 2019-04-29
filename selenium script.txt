@@ -1,0 +1,6 @@
+By.xpath("//button[contains(.,'Add Strategy')]")
+By.xpath("//button[contains(.,'Submit')]")
+Notice that it is same as:
+
+By.xpath("//button[contains(text(),'Add Strategy')]")
+By.xpath("//button[contains(text(),'Submit')]")
